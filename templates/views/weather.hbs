@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>{{title}}</title>
+        {{>icon}}
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main-content">
+            {{>header}}
+            <div>Location:<b>{{location}}</b></div>
+            <div>Conditions:<b>{{description}}</b></div>
+            <div>Temperature:<b>{{temperature}}</b>&deg; {{units}}</div>
+        </div>
+        {{>footer}}
+    </body>
+</html>
