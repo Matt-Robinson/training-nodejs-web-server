@@ -1,5 +1,5 @@
 const path = require('path')
-const weather = require('../../weather-app/weather-utils')
+const weather = require('./weather-utils')
 const express = require('express')
 const hbs = require('hbs')
 
