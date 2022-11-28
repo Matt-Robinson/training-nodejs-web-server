@@ -10,6 +10,7 @@ const partialsFolder = path.join( __dirname, '..', 'templates', 'partials' )
 
 // initialize Express Web Server
 const app = express()
+const port = process.env.PORT || 3000
 app.use(express.static( publicFolder ))
 console.log( "Main Static Folder set to [" + publicFolder + "]" )
 
@@ -113,6 +114,6 @@ app.get('*', (req, res) => {
 })
 
 // main Express Listener
-app.listen(3000, () => {
-    console.log('Server started')
+app.listen(port, () => {
+    console.log('Server started on port ' + port)
 })
